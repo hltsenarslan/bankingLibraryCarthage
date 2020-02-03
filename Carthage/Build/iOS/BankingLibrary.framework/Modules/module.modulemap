@@ -1,0 +1,11 @@
+framework module BankingLibrary {
+  umbrella header "BankingLibrary.h"
+
+  export *
+  module * { export * }
+}
+
+module BankingLibrary.Swift {
+    header "BankingLibrary-Swift.h"
+    requires objc
+}

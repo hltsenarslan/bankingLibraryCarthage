@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "6b5e09342efa6b8fd299bb2a17493f5f7eaa75ca",
+  "iOS" : [
+    {
+      "name" : "BankingLibrary",
+      "hash" : "f92380d836a6b9a14f56156c60c8d3b5b691ea61c80f44975b04eb62af4bd94a",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+    }
+  ]
+}
