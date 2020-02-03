@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		04361E9323E84741006F9315 /* BankingLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 04361E9123E84741006F9315 /* BankingLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04361E9A23E84771006F9315 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04361E9923E84771006F9315 /* EmailValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04361E8E23E84741006F9315 /* BankingLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BankingLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04361E9123E84741006F9315 /* BankingLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankingLibrary.h; sourceTree = "<group>"; };
 		04361E9223E84741006F9315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04361E9923E84771006F9315 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +50,17 @@
 			children = (
 				04361E9123E84741006F9315 /* BankingLibrary.h */,
 				04361E9223E84741006F9315 /* Info.plist */,
+				04361E9B23E84775006F9315 /* Email */,
 			);
 			path = BankingLibrary;
+			sourceTree = "<group>";
+		};
+		04361E9B23E84775006F9315 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				04361E9923E84771006F9315 /* EmailValidator.swift */,
+			);
+			path = Email;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +106,7 @@
 				TargetAttributes = {
 					04361E8D23E84741006F9315 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04361E9A23E84771006F9315 /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		04361E9723E84741006F9315 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tr.com.aktifbank.mobile.BankingLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +298,7 @@
 		04361E9823E84741006F9315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
