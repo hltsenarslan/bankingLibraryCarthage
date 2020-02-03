@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04361E9323E84741006F9315 /* BankingLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 04361E9123E84741006F9315 /* BankingLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04361E9A23E84771006F9315 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04361E9923E84771006F9315 /* EmailValidator.swift */; };
+		04361EA523E85076006F9315 /* IbanValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04361EA423E85076006F9315 /* IbanValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		04361E9123E84741006F9315 /* BankingLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankingLibrary.h; sourceTree = "<group>"; };
 		04361E9223E84741006F9315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04361E9923E84771006F9315 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		04361EA423E85076006F9315 /* IbanValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +50,10 @@
 		04361E9023E84741006F9315 /* BankingLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				04361E9B23E84775006F9315 /* Email */,
+				04361EA323E85058006F9315 /* Iban */,
 				04361E9123E84741006F9315 /* BankingLibrary.h */,
 				04361E9223E84741006F9315 /* Info.plist */,
-				04361E9B23E84775006F9315 /* Email */,
 			);
 			path = BankingLibrary;
 			sourceTree = "<group>";
@@ -61,6 +64,14 @@
 				04361E9923E84771006F9315 /* EmailValidator.swift */,
 			);
 			path = Email;
+			sourceTree = "<group>";
+		};
+		04361EA323E85058006F9315 /* Iban */ = {
+			isa = PBXGroup;
+			children = (
+				04361EA423E85076006F9315 /* IbanValidator.swift */,
+			);
+			path = Iban;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04361EA523E85076006F9315 /* IbanValidator.swift in Sources */,
 				04361E9A23E84771006F9315 /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
